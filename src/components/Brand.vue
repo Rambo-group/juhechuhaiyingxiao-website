@@ -1,14 +1,21 @@
 <template>
   <div class="body">
-    <!-- <swiper class="swiper" :options="swiperOption">
-      <swiper-slide>
+    <swiper class="swiper" :options="swiperOption">
+      <!-- <swiper-slide  class="swiper-slide">
         <img src="~@assets/vzxv.png" alt="" />
       </swiper-slide>
-      <swiper-slide>
+      <swiper-slide  class="swiper-slide">
         <img src="~@assets/vzxv.png" alt="" />
-      </swiper-slide>
-      <div class="swiper-pagination"></div>
-    </swiper> -->
+      </swiper-slide> -->
+      <div class="swiper-slide"><p>Slide 1</p></div>
+      <div class="swiper-slide"><p>Slide 2</p></div>
+      <div class="swiper-slide"><p>Slide 3</p></div>
+      <!-- <div class="swiper-pagination"></div> -->
+      <!-- <div class="swiper-button-prev"></div> -->
+      <!-- <div class="swiper-button-next"></div> -->
+    </swiper>
+
+
     <div class="content">
       <div class="left">
         <div>海外网红营销</div>
@@ -218,31 +225,31 @@
 export default {
   data() {
     return {
-      // swiperOption: {
-      //   direction: "vertical",
-      //   followFinger: false,
-      //   speed: 800,
-      //   mousewheel: true,
-      //   pagination: {
-      //     el: ".swiper-pagination",
-      //   },
-      //   on: {
-      //     init: function () {
-      //       let slide = this.slides.eq(0);
-      //       slide.addClass("ani-slide");
-      //     },
-      //     transitionStart: function () {
-      //       for (let i = 0; i < this.slides.length; i++) {
-      //         let slide = this.slides.eq(i);
-      //         slide.removeClass("ani-slide");
-      //       }
-      //     },
-      //     transitionEnd: function () {
-      //       let slide = this.slides.eq(this.activeIndex);
-      //       slide.addClass("ani-slide");
-      //     },
-      //   },
-      // },
+      swiperOption: {
+        direction: "vertical",
+        followFinger: false,
+        speed: 800,
+        mousewheel: true,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        on: {
+          init: function () {
+            let slide = this.slides.eq(0);
+            slide.addClass("ani-slide");
+          },
+          transitionStart: function () {
+            for (let i = 0; i < this.slides.length; i++) {
+              let slide = this.slides.eq(i);
+              slide.removeClass("ani-slide");
+            }
+          },
+          transitionEnd: function () {
+            let slide = this.slides.eq(this.activeIndex);
+            slide.addClass("ani-slide");
+          },
+        },
+      },
     };
   },
 };
@@ -431,12 +438,12 @@ export default {
         border-radius: 16px;
         margin: 40px 0 0 74px;
         padding: 56px 24px;
-        >div:nth-child(1){
+        > div:nth-child(1) {
           margin-bottom: 40px;
         }
-        .desp{
+        .desp {
           display: flex;
-          >div{
+          > div {
             flex: 1;
             text-align: center;
           }
