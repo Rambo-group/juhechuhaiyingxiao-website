@@ -252,15 +252,15 @@ export default {
 <style lang="less" scoped>
 .body {
   float: right;
+    margin: 64px 0 0;
   .content {
     height: 580px;
     min-width: 1632px;
     display: flex;
-    margin: 124px 0 0;
     .left {
       width: 432px;
       margin-right: 24px;
-      padding-top: 164px;
+      padding-top: 88px;
       text-align: left;
       > div {
         font-size: 32px;
@@ -273,7 +273,7 @@ export default {
       height: 100%;
       width: 72%;
       background: linear-gradient(90deg, #e4f2ff 0%, #ffffff 100%);
-      border-radius: 40px 0px 0px 40px;
+      border-radius: 48px 0px 0px 48px;
       padding: 46px 116px;
       text-align: left;
       img {
@@ -334,7 +334,7 @@ export default {
       height: 100%;
       width: 72%;
       background: linear-gradient(90deg, #e4f2ff 0%, #ffffff 100%);
-      border-radius: 40px 0px 0px 40px;
+      border-radius: 48px 0px 0px 48px;
       padding: 64px 88px;
       text-align: left;
       .title {
@@ -389,7 +389,7 @@ export default {
       height: 100%;
       width: 72%;
       background: linear-gradient(90deg, #e4f2ff 0%, #ffffff 100%);
-      border-radius: 40px 0px 0px 40px;
+      border-radius: 48px 0px 0px 48px;
       padding: 32px 88px;
       img {
         width: 40px;
@@ -404,7 +404,7 @@ export default {
           line-height: 19px;
         }
         > div:nth-child(1) {
-          font-size: 16px;
+          font-size: 14px;
           font-family: Microsoft YaHei-Bold, Microsoft YaHei;
           font-weight: bold;
           color: #131414;
@@ -453,8 +453,8 @@ export default {
   transition-delay: 0.3s;
 }
 .swiper-container {
-  height: 880px;
-  margin: 20px auto;
+  height: 580px;
+  margin: 0 auto;
 }
 .swiper-slide {
   text-align: center;
