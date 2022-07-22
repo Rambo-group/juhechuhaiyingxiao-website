@@ -18,10 +18,10 @@ import Banner from "./components/Banner.vue";
 import Compared from "./components/Compared.vue";
 import Introduce from "./components/Introduce.vue";
 import Brand from "./components/Brand.vue";
-import Footer from "./components/Footer.vue";
 import Advertising from "./components/Advertising.vue";
 import Operation from "./components/Operation.vue";
 import Case from "./components/Case.vue";
+import Footer from "./components/Footers.vue";
 
 export default {
   components: { Serve, Banner, Compared, Introduce, Brand,Advertising,Operation,Case, Footer },
