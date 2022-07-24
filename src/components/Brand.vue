@@ -1,6 +1,6 @@
 <template>
-  <div class="body">
-    <swiper class="swiper" :options="swiperOption">
+  <div class="body" id="Brand">
+    <swiper class="swiper" :options="swiperOption" id="Brand1">
       <div class="swiper-slide">
         <div class="content">
           <div class="left">
@@ -246,13 +246,20 @@ export default {
       },
     };
   },
+  mounted() {
+    $(document).scroll(() => {
+      for (let index = 1; index < 2; index++) {
+        Restore(`#Brand${index}`);
+      }
+    });
+  },
 };
 </script>
 
 <style lang="less" scoped>
 .body {
   float: right;
-    margin: 64px 0 0;
+  margin: 64px 0 0;
   .content {
     height: 580px;
     min-width: 1632px;
@@ -474,13 +481,113 @@ export default {
   align-items: center;
 }
 
-.swiper-slide p {
-  transform: translateX(-200px);
-  opacity: 0;
-  transition: all 0.4s;
+.swiper-slide {
+  .left {
+    transform: translateX(-200px);
+    opacity: 0;
+    transition: all 0.6s;
+  }
+  .rigth {
+    transform: translateX(200px);
+    opacity: 0;
+    transition: all 0.6s;
+    .p1 {
+      transform: translateX(200px);
+      opacity: 0;
+      transition: all 1s;
+    }
+    .p2 {
+      transform: translateX(200px);
+      opacity: 0;
+      transition: all 1.2s;
+    }
+    .p3 {
+      transform: translateX(200px);
+      opacity: 0;
+      transition: all 1.2s;
+    }
+    .p4 {
+      transform: translateX(200px);
+      opacity: 0;
+      transition: all 1.4s;
+    }
+    .p5 {
+      transform: translateX(200px);
+      opacity: 0;
+      transition: all 1.4s;
+    }
+  }
+  .rigth1 {
+    transform: translateX(200px);
+    opacity: 0;
+    transition: all 0.6s;
+    .title {
+      transform: translateX(200px);
+      opacity: 0;
+      transition: all 0.8s;
+    }
+    .picture {
+      transform: translateX(200px);
+      opacity: 0;
+      transition: all 1s;
+    }
+    .rignav {
+      transform: translateX(200px);
+      opacity: 0;
+      transition: all 1.2s;
+    }
+  }
+  .rigth2 {
+    transform: translateX(200px);
+    opacity: 0;
+    transition: all 0.6s;
+    .top {
+      transform: translateX(200px);
+      opacity: 0;
+      transition: all 0.8s;
+    }
+    .bottom {
+      transform: translateX(200px);
+      opacity: 0;
+      transition: all 1s;
+    }
+  }
 }
-.ani-slide p {
-  transform: translateX(0);
-  opacity: 1;
+.ani-slide {
+  .left {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .rigth {
+    transform: translateX(0);
+    opacity: 1;
+    .p1,
+    .p2,
+    .p3,
+    .p4,
+    .p5 {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .rigth1 {
+    transform: translateX(0);
+    opacity: 1;
+    .title,
+    .picture,
+    .rignav {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .rigth2 {
+    transform: translateX(0);
+    opacity: 1;
+    .top,
+    .bottom {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 }
 </style>

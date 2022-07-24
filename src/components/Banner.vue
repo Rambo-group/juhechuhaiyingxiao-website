@@ -1,8 +1,8 @@
 <template>
-  <div class="home">
+  <div class="home" id="Banner">
     <div class="head">
-      <div class="row top">
-        <div class="col-12 col-lg-6 left">
+      <div class="row">
+        <div class="col-12 col-lg-6 left" id="Banner1">
           <div class="title">聚合你的广告资源</div>
           <div class="top_p">赋能出海品牌 助力全球营销</div>
         </div>
@@ -28,12 +28,11 @@ export default {
   data() {
     return {
       swiperOption: {
-        // mousewheel: true,
         slidesPerView: 1.6,
         watchSlidesProgress: true,
         centeredSlides: true,
         loop: true,
-        speed:500,
+        speed: 500,
         loopedSlides: 3,
         autoplay: true,
         navigation: {
@@ -76,11 +75,16 @@ export default {
       },
     };
   },
+    mounted() {
+      for (let index = 1; index < 2; index++) {
+        Restore(`#Banner${index}`);
+      }
+  },
 };
 </script>
 
 <style lang="less" scoped>
-.home{
+.home {
   display: flex;
   justify-content: center;
 }
@@ -95,7 +99,7 @@ export default {
   background-position: center;
   background-size: 100% 100%;
   padding: 0 88px 0 64px;
-  .top {
+  // .top {
     .left {
       display: flex;
       flex-direction: column;
@@ -105,6 +109,7 @@ export default {
         font-family: Microsoft YaHei-Bold, Microsoft YaHei;
         font-weight: bold;
         color: #131414;
+        transition: all 0.4s;
       }
       .top_p {
         font-size: 40px;
@@ -113,6 +118,7 @@ export default {
         color: #131414;
         line-height: 47px;
         letter-spacing: 12px;
+        transition: all 0.4s;
       }
     }
 
@@ -120,8 +126,9 @@ export default {
       img {
         width: 372px;
         height: 510px;
+        transition: all 1.8s;
       }
     }
-  }
+  // }
 }
 </style>

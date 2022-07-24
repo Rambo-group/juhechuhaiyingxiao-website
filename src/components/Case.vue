@@ -1,8 +1,8 @@
 <template>
-  <div class="content">
+  <div class="content" id="Case">
     <div class="container">
-      <div class="title">案例展示</div>
-      <swiper class="swiper carousel" :options="swiperOption">
+      <div class="title" id="Case1">案例展示</div>
+      <swiper class="swiper carousel" :options="swiperOption" id="Case2">
         <swiper-slide>
           <div class="row alls">
             <div class="col-4 left">
@@ -177,12 +177,20 @@ export default {
   data() {
     return {
       swiperOption: {
+        loop: true,
         navigation: {
           nextEl: ".button-next",
           prevEl: ".button-prev",
         },
       },
     };
+  },
+  mounted() {
+    $(document).scroll(() => {
+      for (let index = 1; index < 3; index++) {
+        Restore(`#Case${index}`);
+      }
+    });
   },
 };
 </script>
@@ -364,5 +372,8 @@ export default {
       transform: rotateY(180deg);
     }
   }
+}
+.row {
+  --bs-gutter-x: 0px !important;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
-  <div class="body">
-    <swiper class="swiper" :options="swiperOption">
+  <div class="body" id="Compared">
+    <swiper class="swiper" :options="swiperOption" id="Compared1">
       <div class="swiper-slide">
         <div class="content">
           <div class="left">
@@ -142,6 +142,13 @@ export default {
         },
       },
     };
+  },
+    mounted() {
+    $(document).scroll(() => {
+      for (let index = 1; index < 2; index++) {
+        Restore(`#Compared${index}`);
+      }
+    });
   },
 };
 </script>
@@ -289,39 +296,100 @@ export default {
       }
     }
   }
-  .swiper-wrapper {
-    transition-delay: 0.3s;
-  }
-  .swiper-container {
-    height: 580px;
-    margin: 20px auto;
-  }
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
+}
+.swiper-wrapper {
+  transition-delay: 0.3s;
+}
+.swiper-container {
+  height: 580px;
+  margin: 20px auto;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
 
-  .swiper-slide p {
+.swiper-slide {
+  .left {
     transform: translateX(-200px);
     opacity: 0;
-    transition: all 0.4s;
+    transition: all 0.6s;
+    .sdk1 {
+      transform: translateX(-200px);
+      opacity: 0;
+      transition: all 1s;
+    }
+    .sdk2 {
+      transform: translateX(-200px);
+      opacity: 0;
+      transition: all 1s;
+    }
+    .sdk3 {
+      transform: translateX(-200px);
+      opacity: 0;
+      transition: all 0.8s;
+    }
   }
-  .ani-slide p {
+  .left1 {
+    transform: translateX(-200px);
+    opacity: 0;
+    transition: all 0.6s;
+    .item1 {
+      transform: translateX(-200px);
+      opacity: 0;
+      transition: all 0.8s;
+    }
+    .item2 {
+      transform: translateX(-200px);
+      opacity: 0;
+      transition: all 1s;
+    }
+    .item3 {
+      transform: translateX(-200px);
+      opacity: 0;
+      transition: all 1.1s;
+    }
+  }
+  .rigth {
+    transform: translateX(200px);
+    opacity: 0;
+    transition: all 0.6s;
+  }
+}
+.ani-slide {
+  .left,
+  .rigth {
     transform: translateX(0);
     opacity: 1;
+    .sdk1,
+    .sdk2,
+    .sdk3 {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .left1 {
+    transform: translateX(0);
+    opacity: 1;
+    .item1,
+    .item2,
+    .item3 {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
 }
 </style>

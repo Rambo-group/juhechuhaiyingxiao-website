@@ -1,18 +1,32 @@
 <template>
-  <div class="intor">
-    <div class="title">我们能做什么？</div>
+  <div class="intor" id="Introduce">
+    <div class="title" id="Introduce1">我们能做什么？</div>
     <div class="container">
-      <div class="row content">
-        <div class="col-12 col-lg-6 col-xl-4"><img src="~@assets/yery.png" alt="" /></div>
-        <div class="col-12 col-lg-6 col-xl-4"><img src="~@assets/fasf.png" alt="" /></div>
-        <div class="col-12 col-lg-6 col-xl-4"><img src="~@assets/vzx.png" alt="" /></div>
+      <div class="row content" id="Introduce2">
+        <div class="col-12 col-lg-6 col-xl-4">
+          <img src="~@assets/yery.png" alt="" />
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4">
+          <img src="~@assets/fasf.png" alt="" />
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4">
+          <img src="~@assets/vzx.png" alt="" />
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  mounted() {
+    $(document).scroll(() => {
+      for (let index = 1; index < 3; index++) {
+        Restore(`#Introduce${index}`);
+      }
+    });
+  },
+};
 </script>
 
 <style lang="less" scoped>

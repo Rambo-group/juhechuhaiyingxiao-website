@@ -1,8 +1,8 @@
 <template>
-  <div class="business">
+  <div class="business" id="Advertising">
     <div class="container">
-      <div class="title">广告投放</div>
-      <div class="row item">
+      <div class="title" id="Advertising1">广告投放</div>
+      <div class="row item" id="Advertising2">
         <div class="col-5"><img src="~@assets/xcvxc.png" alt="" /></div>
         <div class="col-7">
           <div class="tit">Facebook</div>
@@ -11,7 +11,7 @@
           </div>
         </div>
       </div>
-      <div class="row item">
+      <div class="row item" id="Advertising3">
         <div class="col-7">
           <div class="tit" style="text-align: right;">lnstagram</div>
           <div class="txt" style="text-align: right;">
@@ -26,7 +26,7 @@
         </div>
         <div class="col-5"><img src="~@assets/kuk.png" alt="" /></div>
       </div>
-      <div class="row item">
+      <div class="row item" id="Advertising4">
         <div class="col-5"><img src="~@assets/vxc.png" alt="" /></div>
         <div class="col-7">
           <div class="tit">TikTok</div>
@@ -42,6 +42,13 @@
 export default {
   data() {
     return {};
+  },
+   mounted() {
+    $(document).scroll(() => {
+      for (let index = 1; index < 5; index++) {
+        Restore(`#Advertising${index}`);
+      }
+    });
   },
 };
 </script>
