@@ -3,13 +3,13 @@
     <div class="title" id="Introduce1">我们能做什么？</div>
     <div class="container">
       <div class="row content" id="Introduce2">
-        <div class="col-12 col-lg-6 col-xl-4">
+        <div class="col-4">
           <img src="~@assets/yery.png" alt="" />
         </div>
-        <div class="col-12 col-lg-6 col-xl-4">
+        <div class="col-4">
           <img src="~@assets/fasf.png" alt="" />
         </div>
-        <div class="col-12 col-lg-6 col-xl-4">
+        <div class="col-4">
           <img src="~@assets/vzx.png" alt="" />
         </div>
       </div>
@@ -42,6 +42,7 @@ export default {
     margin: 124px 0;
   }
   .content {
+  min-width: 1400px;
     img {
       width: 432px;
       height: 566px;

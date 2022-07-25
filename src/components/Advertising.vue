@@ -68,6 +68,7 @@ export default {
   .item {
     text-align: center;
     margin-top: 124px;
+    min-width: 1100px;
     img {
       width: 276px;
       height: 590px;

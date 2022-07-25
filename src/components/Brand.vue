@@ -258,14 +258,15 @@ export default {
 
 <style lang="less" scoped>
 .body {
-  float: right;
+  // float: right;
   margin: 64px 0 0;
   .content {
     height: 580px;
-    min-width: 1632px;
+    // min-width: 1632px;
     display: flex;
     .left {
       width: 432px;
+      min-width: 350px;
       margin-right: 24px;
       padding-top: 88px;
       text-align: left;
@@ -278,7 +279,8 @@ export default {
     }
     .rigth {
       height: 100%;
-      width: 72%;
+      width: 1100px;
+      min-width: 750px;
       background: linear-gradient(90deg, #e4f2ff 0%, #ffffff 100%);
       border-radius: 48px 0px 0px 48px;
       padding: 46px 116px;
@@ -339,7 +341,8 @@ export default {
     }
     .rigth1 {
       height: 100%;
-      width: 72%;
+      width: 1100px;
+      min-width: 750px;
       background: linear-gradient(90deg, #e4f2ff 0%, #ffffff 100%);
       border-radius: 48px 0px 0px 48px;
       padding: 64px 88px;
@@ -394,7 +397,8 @@ export default {
     }
     .rigth2 {
       height: 100%;
-      width: 72%;
+      width: 1100px;
+      min-width: 750px;
       background: linear-gradient(90deg, #e4f2ff 0%, #ffffff 100%);
       border-radius: 48px 0px 0px 48px;
       padding: 32px 88px;
@@ -471,10 +475,10 @@ export default {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: end;
+  justify-content: end;
   -webkit-box-align: center;
   -ms-flex-align: center;
   -webkit-align-items: center;

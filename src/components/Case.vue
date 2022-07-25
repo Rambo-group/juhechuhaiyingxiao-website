@@ -92,7 +92,7 @@
               </div>
               <div class="nav">
                 <div class="tit">营销策略</div>
-                <div class="txt">头部科技测评顶级KOL</div>
+                <div class="txt" style="">头部科技测评顶级KOL</div>
                 <div class="txt">
                   合作形式为： Youtube全片 + IG post + IG Story
                 </div>
@@ -211,7 +211,7 @@ export default {
       padding: 20px 56px 20px 32px;
       .nav {
         padding: 20px 0;
-
+        flex-direction: column;
         .tit {
           font-size: 32px;
           font-family: Microsoft YaHei-Bold, Microsoft YaHei;
@@ -351,6 +351,7 @@ export default {
   }
   .carousel {
     position: relative;
+    min-width: 1300px;
     .button-prev,
     .button-next {
       width: 40px;

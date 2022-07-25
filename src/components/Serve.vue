@@ -70,6 +70,7 @@ export default {
   }
   .business {
     display: flex;
+    min-width: 1300px;
     > div {
       flex: 1;
     }
@@ -82,6 +83,7 @@ export default {
       border-radius: 16px;
       padding: 64px 24px;
       text-align: center;
+      width: 250px;
       > img {
         width: 64px;
         height: 64px;

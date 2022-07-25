@@ -87,6 +87,7 @@ export default {
     margin: 124px 0 0;
   }
   .describe {
+    min-width: 1200px;
     .left {
       padding: 96px 80px;
       .tit {

@@ -91,7 +91,7 @@ export default {
 .head {
   height: 820px;
   max-width: 1600px;
-  min-width: 1200px;
+  min-width: 1440px;
   display: flex;
   flex-direction: column;
   justify-content: center;

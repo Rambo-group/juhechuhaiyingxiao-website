@@ -156,10 +156,10 @@ export default {
 <style lang="less" scoped>
 .body {
   margin: 124px 0 224px;
-  float: left;
+  // float: left;
   .content {
     height: 580px;
-    width: 1632px;
+    // width: 1632px;
     display: flex;
     .left {
       position: relative;
@@ -278,13 +278,14 @@ export default {
       .item3 {
         position: absolute;
         top: 380px;
-        left: 378px;
+        right: 378px;
         width: 340px;
         background: linear-gradient(90deg, #accbee 0%, #e7f0fd 100%);
       }
     }
     .rigth {
       width: 432px;
+      min-width: 350px;
       margin-left: 24px;
       padding-top: 88px;
       text-align: left;
@@ -306,16 +307,7 @@ export default {
 }
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
   background: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
@@ -323,6 +315,7 @@ export default {
 }
 
 .swiper-slide {
+
   .left {
     transform: translateX(-200px);
     opacity: 0;
