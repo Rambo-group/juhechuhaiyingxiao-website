@@ -156,15 +156,13 @@ export default {
 <style lang="less" scoped>
 .body {
   margin: 124px 0 224px;
-  // float: left;
   .content {
     height: 580px;
-    // width: 1632px;
     display: flex;
     .left {
       position: relative;
       height: 100%;
-      width: 72%;
+      width: 1176px;
       background: linear-gradient(90deg, #ffffff 0%, #d9ffe7 100%);
       border-radius: 0px 48px 48px 0px;
       padding: 45px 0 0 132px;
@@ -228,7 +226,7 @@ export default {
     .left1 {
       position: relative;
       height: 100%;
-      width: 72%;
+      width: 1176px;
       background: linear-gradient(90deg, #ffffff 0%, #d9ffe7 100%);
       border-radius: 0px 48px 48px 0px;
       text-align: left;

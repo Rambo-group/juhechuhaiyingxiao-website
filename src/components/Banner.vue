@@ -75,10 +75,10 @@ export default {
       },
     };
   },
-    mounted() {
-      for (let index = 1; index < 2; index++) {
-        Restore(`#Banner${index}`);
-      }
+  mounted() {
+    for (let index = 1; index < 2; index++) {
+      Restore(`#Banner${index}`);
+    }
   },
 };
 </script>
@@ -100,35 +100,35 @@ export default {
   background-size: 100% 100%;
   padding: 0 88px 0 64px;
   // .top {
-    .left {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      .title {
-        font-size: 64px;
-        font-family: Microsoft YaHei-Bold, Microsoft YaHei;
-        font-weight: bold;
-        color: #131414;
-        transition: all 0.4s;
-      }
-      .top_p {
-        font-size: 40px;
-        font-family: Microsoft YaHei-Regular, Microsoft YaHei;
-        font-weight: 400;
-        color: #131414;
-        line-height: 47px;
-        letter-spacing: 12px;
-        transition: all 0.4s;
-      }
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .title {
+      font-size: 64px;
+      font-family: Microsoft YaHei-Bold, Microsoft YaHei;
+      font-weight: bold;
+      color: #131414;
+      transition: all 0.4s;
     }
+    .top_p {
+      font-size: 40px;
+      font-family: Microsoft YaHei-Regular, Microsoft YaHei;
+      font-weight: 400;
+      color: #131414;
+      line-height: 47px;
+      letter-spacing: 12px;
+      transition: all 0.4s;
+    }
+  }
 
-    #home {
-      img {
-        width: 372px;
-        height: 510px;
-        transition: all 1.8s;
-      }
+  #home {
+    img {
+      width: 372px;
+      height: 510px;
+      transition: all 1.8s;
     }
+  }
   // }
 }
 </style>

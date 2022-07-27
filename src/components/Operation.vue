@@ -25,8 +25,8 @@
       </div>
       <div class="streaming">
         <div class="title" id="Operation3">跨境直播</div>
-        <div class="row describe first2">
-          <div class="col-7 left" id="Operation4">
+        <div class="row describe first2" id="Operation4">
+          <div class="col-7 left">
             <div class="tit">娱乐式、交互式</div>
             <div class="tet">一站式的购物体验</div>
             <div class="txt">

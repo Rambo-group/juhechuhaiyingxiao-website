@@ -258,11 +258,9 @@ export default {
 
 <style lang="less" scoped>
 .body {
-  // float: right;
   margin: 64px 0 0;
   .content {
     height: 580px;
-    // min-width: 1632px;
     display: flex;
     .left {
       width: 432px;
@@ -279,7 +277,7 @@ export default {
     }
     .rigth {
       height: 100%;
-      width: 1100px;
+      width: 1176px;
       min-width: 750px;
       background: linear-gradient(90deg, #e4f2ff 0%, #ffffff 100%);
       border-radius: 48px 0px 0px 48px;
@@ -341,7 +339,7 @@ export default {
     }
     .rigth1 {
       height: 100%;
-      width: 1100px;
+      width: 1176px;
       min-width: 750px;
       background: linear-gradient(90deg, #e4f2ff 0%, #ffffff 100%);
       border-radius: 48px 0px 0px 48px;
@@ -397,7 +395,7 @@ export default {
     }
     .rigth2 {
       height: 100%;
-      width: 1100px;
+      width: 1176px;
       min-width: 750px;
       background: linear-gradient(90deg, #e4f2ff 0%, #ffffff 100%);
       border-radius: 48px 0px 0px 48px;

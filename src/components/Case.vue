@@ -6,13 +6,13 @@
         <swiper-slide>
           <div class="row alls">
             <div class="col-4 left">
-              <div class="nav">
+              <div class="nav p1">
                 <div class="tit">智能家居</div>
                 <div class="txt">
                   可语音控制的智能家居产品，包括智能插座、彩色声控灯具等
                 </div>
               </div>
-              <div class="nav">
+              <div class="nav p2">
                 <div class="tit">营销策略</div>
                 <div class="txt">
                   推荐多垂类KOL，涵盖头部、中腰部及尾部博主扩大产品目标受众的覆盖面
@@ -23,7 +23,7 @@
                   拆箱讲解、Hometour、家居改装、生活Vlog植入等形式
                 </div>
               </div>
-              <div class="nav">
+              <div class="nav p3">
                 <div class="tit">营销效果</div>
                 <div class="txt">
                   <span>合作KOL数：25+</span><span>粉丝覆盖：2700w+</span>
@@ -47,11 +47,11 @@
         <swiper-slide
           ><div class="row alls">
             <div class="col-4 left">
-              <div class="nav">
+              <div class="nav p1">
                 <div class="tit">原神</div>
                 <div class="txt">由miHoYo自研的一款全新开放世界冒险RPG</div>
               </div>
-              <div class="nav">
+              <div class="nav p2">
                 <div class="tit">营销策略</div>
                 <div class="txt">
                   创意视频、游戏网红全片、娱乐创意网红贴片、直播等一系列推广
@@ -59,7 +59,7 @@
                 <div class="txt">推广平台：YouTube、Instagram</div>
                 <div class="txt">推广地区：巴西、西班牙、德国、俄罗斯</div>
               </div>
-              <div class="nav">
+              <div class="nav p3">
                 <div class="tit">营销效果</div>
                 <div class="txt">
                   <span>累计推广曝光：9000w+</span
@@ -84,13 +84,13 @@
         <swiper-slide
           ><div class="row alls">
             <div class="col-4 left">
-              <div class="nav">
+              <div class="nav p1">
                 <div class="tit">TCL电视</div>
                 <div class="txt">
                   传达出最新8K Mini Led 电视机，超高科技，艺术观感体验
                 </div>
               </div>
-              <div class="nav">
+              <div class="nav p2">
                 <div class="tit">营销策略</div>
                 <div class="txt" style="">头部科技测评顶级KOL</div>
                 <div class="txt">
@@ -103,7 +103,7 @@
                   两个好友，写出为什么你喜欢这部最新款电视机，就有机会赢得这部电视机
                 </div>
               </div>
-              <div class="nav">
+              <div class="nav p3">
                 <div class="tit">营销效果</div>
                 <div class="txt">
                   <span>粉丝覆盖：80w+</span><span>粉丝互动率超过：30%</span>
@@ -127,13 +127,13 @@
         <swiper-slide
           ><div class="row alls">
             <div class="col-4 left">
-              <div class="nav">
+              <div class="nav p1">
                 <div class="tit">海南旅游局境外社媒运营</div>
                 <div class="txt">
                   提高海南知名度及与世界接轨的融合度，以国际化视野，深挖海南的各色旅游线路
                 </div>
               </div>
-              <div class="nav">
+              <div class="nav p2">
                 <div class="tit">营销策略</div>
                 <div class="txt">
                   首先，在不同的平台做内容差异化运营策略，着力加强海南整体品牌形象的
@@ -143,7 +143,7 @@
                   其次，我们通过定期的创意内容Planning，持续塑造个性鲜明的海南国际化形象。同时，连续举办3场共持续12天的全球KOL体验游的公关事件，以Vlog的视角体验海南的美食、冒险、酒店等主题旅游路线，提升海南的综合影响力
                 </div>
               </div>
-              <div class="nav">
+              <div class="nav p3">
                 <div class="tit">营销效果</div>
                 <div class="txt">
                   <span>旅游人数增加：20w+</span><span>线下活动： 4+</span>
@@ -178,6 +178,8 @@ export default {
     return {
       swiperOption: {
         loop: true,
+        autoplay: true,
+        speed: 1000,
         navigation: {
           nextEl: ".button-next",
           prevEl: ".button-prev",
@@ -234,17 +236,38 @@ export default {
           }
         }
       }
+      .p1 {
+        opacity: 0;
+        transition: all 1.5s;
+        transform: translateX(200px);
+      }
+      .p2 {
+        opacity: 0;
+        transition: all 1.6s;
+        transform: translateX(250px);
+      }
+      .p3 {
+        opacity: 0;
+        transition: all 1.7s;
+        transform: translateX(300px);
+      }
     }
     .right {
       position: relative;
       background-color: #f5f5f7;
       border-radius: 16px;
+        opacity: 0;
+        transition: all 1.5s;
+        transform: translateX(200px);
       .rigimg1 {
         position: absolute;
         top: 54px;
         left: 164px;
         width: 264px;
         height: 532px;
+        opacity: 0;
+        transition: all 1.5s;
+        transform: translateX(200px);
         > img {
           width: 100%;
           height: 100%;
@@ -275,11 +298,17 @@ export default {
         position: absolute;
         top: 40px;
         right: 40px;
+        opacity: 0;
+        transition: all 1.6s;
+        transform: translateX(200px);
       }
       .fl2 {
         position: absolute;
         top: 181px;
         right: 40px;
+        opacity: 0;
+        transition: all 1.7s;
+        transform: translateX(250px);
       }
       .rigimg2 {
         position: absolute;
@@ -287,6 +316,9 @@ export default {
         left: 80px;
         width: 443px;
         height: 289px;
+        opacity: 0;
+        transition: all 1.5s;
+        transform: translateX(200px);
         > img {
           width: 100%;
           height: 100%;
@@ -298,6 +330,9 @@ export default {
         left: 124px;
         width: 443px;
         height: 289px;
+        opacity: 0;
+        transition: all 1.5s;
+        transform: translateX(250px);
         > img {
           width: 100%;
           height: 100%;
@@ -309,6 +344,9 @@ export default {
         left: 64px;
         width: 480px;
         height: 320px;
+        opacity: 0;
+        transition: all 1.5s;
+        transform: translateX(200px);
         > img {
           width: 100%;
           height: 100%;
@@ -320,6 +358,9 @@ export default {
         left: 48px;
         width: 288px;
         height: 276px;
+        opacity: 0;
+        transition: all 1.5s;
+        transform: translateX(200px);
         > img {
           width: 100%;
           height: 100%;
@@ -331,6 +372,9 @@ export default {
         left: 360px;
         width: 188px;
         height: 276px;
+        opacity: 0;
+        transition: all 1.5s;
+        transform: translateX(250px);
         > img {
           width: 100%;
           height: 100%;
@@ -338,6 +382,9 @@ export default {
       }
       .rigimg7 {
         position: absolute;
+        opacity: 0;
+        transition: all 1.5s;
+        transform: translateX(300px);
         top: 365px;
         left: 48px;
         width: 497x;
@@ -371,6 +418,27 @@ export default {
       bottom: 32px;
       background-image: url("~@assets/fsgsa.png");
       transform: rotateY(180deg);
+    }
+  }
+}
+/deep/.swiper-wrapper {
+  transition-timing-function: ease;
+  .swiper-slide-active {
+    .p1,
+    .p2,
+    .p3,
+    .right,
+    .rigimg1,
+    .rigimg2,
+    .rigimg3,
+    .rigimg4,
+    .rigimg5,
+    .rigimg6,
+    .rigimg7,
+    .fl1,
+    .fl2 {
+      opacity: 1 !important;
+      transform: translateX(0) !important;
     }
   }
 }
